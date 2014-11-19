@@ -1,0 +1,10 @@
+@import "reset.css";
+@import "bootstrap.min.css";
+/* header */
+.profile{margin-right:0.5em}
+.navbar{background:#428BCA;border-radius:0;border-color:#428BD1;}
+.navbar a{color:#fff;}
+/* wrap */
+#main{position:relative;}
+.sidebar{border:1px solid #ccc;width:300px;float:left;position:absolute;left:0;top:0;bottom:0}
+#wrap{margin-left:310px}
