@@ -4,6 +4,7 @@
 .profile{margin-right:0.5em}
 .navbar{background:#428BCA;border-radius:0;border-color:#428BD1;}
 .navbar a{color:#fff;}
+.user-exit{margin:16px 0 0 -15px}
 /* wrap */
 #main{position:relative;}
 #wrap{margin-left:310px}
