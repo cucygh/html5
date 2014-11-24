@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<% include pub/meta.html %>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/css/index-new.css' />
+	</head>
+	<body class="home blog">
+		<iframe id="sina_anywhere_iframe" style="display: none;"></iframe>
+		<!-- header -->
+		<div id="header" style="top: 0px;">
+			<div id="header-inner">
+				<div id="header-box">
+					<div id="logo"> 
+						<h2><a href="http://www.boxui.com" title="盒子UI设计">盒子UI</a></h2>
+						<span>分享以用户体验为中心的设计</span>     
+					</div>
+				<div class="menu">
+					<li class="cat-item cat-item-11 current-cat">
+						<a title="分享精彩UI设计作品" href="http://www.boxui.com" style=" float:left;">首页</a><span id="show_status" class="show_status_up"></span>
+					</li>
+				</div>
+				<div class="my_menu">
+					<ul id="menu-ui_design" class="menu">
+						<li id="menu-item-13605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13605"><a href="">UI设计</a></li>
+						<li id="menu-item-13604" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13604"><a href="#">酷站欣赏</a></li>
+					</ul>
+				</div>
+				<div id="member">
+					<ul>
+						<li id="search">
+							<form method="get" id="searchform" action="">
+								<input type="text" class="i_search" value="搜索" name="s" id="s" size="15" onfocus="this.value = this.value == this.defaultValue ? '' : this.value;$('#s').animate({width:'200px'});" onblur="this.value = this.value == '' ? this.defaultValue : this.value;$('#s').animate({width:'40px'});">
+								<input type="submit" id="searchsubmit" value="" onclick="javascript:if(searchform.s.value=='搜索'){ $('#s').animate({width:'200px'}); $('#s').focus();return false;}">
+							</form>
+						</li>
+						<li id="login">
+							<a id="login-trigger" href="#" class="login" title="登录">登录</a>
+							<div id="login-content" class="hidden">
+								<form action="http://www.boxui.com/blog/wp-login.php" method="post">
+									<div>
+										<p><label>用户名</label></p>
+										<input id="log" type="text" name="log" value="" size="20" tabindex="1">
+										<p><label style="line-height:2em;">密码</label><a style="float:right;" href="http://www.boxui.com/blog/wp-login.php?action=lostpassword">忘记密码?</a></p>
+										<input type="password" name="pwd" id="pwd" size="20" tabindex="2">
+									</div>
+									<div id="actions">
+										<input type="submit" name="submit" value="登录" class="button" tabindex="3">
+										<label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever">&nbsp;保持登录状态</label>
+										<input type="hidden" name="redirect_to" value="/">
+										<br clear="all">
+									</div>
+									<div>
+										<p class="t_login_text t_login_text1">您可以用合作网站帐号登录(<span style="color:#4ba6e5">免注册</span>):</p>
+										<p class="connectBox1 t_login_button"><a title="QQ" href="http://www.boxui.com/blog/wp-content/plugins/wp-connect/login.php?go=qzone" rel="nofollow"><img src="http://www.boxui.com/blog/wp-content/plugins/wp-connect/images/login/btn_qzone.png"></a><a title="新浪微博" href="http://www.boxui.com/blog/wp-content/plugins/wp-connect/login.php?go=sina" rel="nofollow"><img src="http://www.boxui.com/blog/wp-content/plugins/wp-connect/images/login/btn_sina.png"></a><a title="腾讯微博" href="http://www.boxui.com/blog/wp-content/plugins/wp-connect/login.php?go=qq" rel="nofollow"><img src="http://www.boxui.com/blog/wp-content/plugins/wp-connect/images/login/btn_qq.png"></a></p>
+										<br>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li id="register"><a  href="#" class="login" title="注册">注册</a></li>
+						<li class="sina_gz">
+							<a href="#" class="buy-car">购物车</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		<!--end header-box--> 
+		</div>
+	</div>
+	<!-- end header -->
+	<div style="height:40px;"></div>
+	<!-- sub nav -->
+	<div class="cate_form" style="display: block; position: static;">
+		<div class="head_category">
+			<div class="category_main">
+				<li class="cat-item cat-item-385"><a href="http://www.boxui.com/category/ued" title="[UI设计,用户体验,ucd,以用户为中心的设计,用户研究,交互设计,视觉设计,ui设计]坚持以用户为中心的设计，包括ui设计（视觉），交互设计及用户研究三大部分。">UED</a>
+					<ul class="children">
+						<li class="cat-item cat-item-511"><a href="http://www.boxui.com/category/ued/ui-design-ued" title="[UI设计,UI,UI界面设计,]分享精彩的UI设计作品，包括网页设计，图标设计，APP设计。。。">UI设计</a></li>
+						<li class="cat-item cat-item-512"><a href="http://www.boxui.com/category/ued/interaction-design" title="[交互设计,什么是交互设计,可用性测试,易用性测试,interaction design]分享一些交互设计的相关经验和涉及到的可用性、易用性测试的方法。">交互设计</a></li>
+						<li class="cat-item cat-item-513"><a href="http://www.boxui.com/category/ued/user-research" title="[用户研究,user research,什么是用户研究,用户任务模型,用户研究方法,用户体验研究]分享一些用户研究的方法及内容 | 什么是用户研究 | 用户研究有哪些方法">用户研究</a></li>
+						<li class="cat-item cat-item-554"><a href="http://www.boxui.com/category/ued/design-idea" title="[产品设计,UI设计,设计理念,设计思想]分享产品设计、UI设计的设计理念知识。">设计理念</a></li>
+					</ul>
+				</li>
+				<li class="cat-item cat-item-559"><a href="http://www.boxui.com/category/design-dynamics" title="[设计行业动态,设计活动,活动推广,线下活动,招聘求职]最新的设计行业动态新闻，线上线下推广活动及发布招聘、求职信息。">行业动态</a>
+					<ul class="children">
+						<li class="cat-item cat-item-509"><a href="#" title="">活动</a></li>
+						<li class="cat-item cat-item-510"><a href="#" title="">招聘求职</a></li>
+						<li class="cat-item cat-item-560"><a href="#" title="">最新动态</a></li>
+					</ul>
+				</li>
+				<li class="cat-item cat-item-559"><a href="http://www.boxui.com/category/design-dynamics" title="[设计行业动态,设计活动,活动推广,线下活动,招聘求职]最新的设计行业动态新闻，线上线下推广活动及发布招聘、求职信息。">测试内容</a>
+					<ul class="children">
+						<li class="cat-item cat-item-509"><a href="#" title="">测试</a></li>
+						<li class="cat-item cat-item-510"><a href="#" title="">招聘求职</a></li>
+						<li class="cat-item cat-item-560"><a href="#" title="">最新动态</a></li>
+					</ul>
+				</li>
+				<li class="cat-item cat-item-559"><a href="http://www.boxui.com/category/design-dynamics" title="[设计行业动态,设计活动,活动推广,线下活动,招聘求职]最新的设计行业动态新闻，线上线下推广活动及发布招聘、求职信息。">活动宣传</a>
+					<ul class="children">
+						<li class="cat-item cat-item-509"><a href="#" title="">测试</a></li>
+						<li class="cat-item cat-item-510"><a href="#" title="">招聘求职</a></li>
+						<li class="cat-item cat-item-560"><a href="#" title="">最新动态</a></li>
+					</ul>
+				</li>
+				
+				<!-- <li class="post_tips"><a href="#" title="">我也要分享</a></li> -->
+			</div>
+		</div>
+	</div>
+	<!-- end sub nav -->
+	
+	<div id="wrap">
+		<div id="container">
+			<div id="slideshow" class="post-home clearfix">
+				<ul class="banner" style="overflow: hidden; width: 66%; height: 390px;">
+					<span class="unslider-arrow prev" style="display: none;"></span>
+					<span class="unslider-arrow next" style="display: none;"></span>
+					<ul style="width: 400%; position: relative; left: -300%; height: 390px;">
+                        <li style="width: 25%;">
+							<a class="inimg" href="#" title="涟漪-微质感手机主题" target="_blank">
+								<img alt="AYR-Bonobos旗下女性独立服装品牌-极致的细节处理" src="/img/indexnew/timthumb.jpg">
+							</a>
+							<div class="banner_info" style="top: 400px;">
+								<div class="title">
+									涟漪-微质感手机主题<span>UI设计</span>
+								</div>
+								<div class="description">
+									<p>看腻了扁平，来点微质感也不错。如沐春风，如鱼戏水</p>
+								</div>
+							</div>
+						</li>
+                        <li style="width: 25%;">
+							<a class="inimg" href="#" title="点点送餐App" target="_blank">
+								<img alt="AYR-Bonobos旗下女性独立服装品牌-极致的细节处理" src="/img/indexnew/timthumb2.jpg">
+							</a>
+							<div class="banner_info" style="top: 400px;">
+								<div class="title">
+									点点送餐App<span>UI设计</span>
+								</div>
+								<div class="description">
+									<p>点点送餐3.0版，界面清爽自然，不错。</p>
+								</div>
+							</div>
+						</li>
+                        <li style="width: 25%;">
+							<a class="inimg" href="#" title="" target="_blank">
+								<img alt="AYR-Bonobos旗下女性独立服装品牌-极致的细节处理" src="/img/indexnew/timthumb3.jpg">
+							</a>
+							<div class="banner_info" style="top: 400px;">
+								<div class="title">
+									AYR-Bonobos旗下女性独立服装品牌-极致的细节处理<span>酷站欣赏</span>
+								</div>
+								<div class="description">
+									<p>AYR是四季的缩写，也是苏格兰一个海滨小镇的名字。这是Bonobos的第三个独立品牌。</p>
+								</div>
+							</div>
+						</li>
+                        <li style="width: 25%;">
+							<a class="inimg" href="#" title="夏威夷美食葡萄酒节" target="_blank">
+							<img alt="AYR-Bonobos旗下女性独立服装品牌-极致的细节处理" src="/img/indexnew/timthumb.jpg">
+							</a>
+							<div class="banner_info" style="top: 400px;">
+								<div class="title">
+									夏威夷美食葡萄酒节<span>酷站欣赏</span>
+								</div>
+								<div class="description">
+									<p>夏威夷美食葡萄酒节</p>
+								</div>
+							</div>
+						</li>
+                      </ul>
+				</ul>
+				<ul class="index_post_list">
+					<h2>读 . 设计</h2>
+					<li>
+						<a href="#" title="腾讯CDC标叔-我的十年，交互之外的那些事" target="_blank">腾讯CDC标叔-我的十年，交互之外 ...</a>
+						<div>交互设计                &nbsp;|&nbsp;                2014-11-17</div>
+					</li>
+					<li>
+						<a href="#" title="关于用户体验迷失的思考" target="_blank">关于用户体验迷失的思考</a>
+						<div>设计理念                &nbsp;|&nbsp;							2014-11-06 </div>
+					</li>
+                    <li>
+						<a href="#" title="从Material UI得到的设计感悟" target="_blank">从Material UI得到的设计感悟</a>
+						<div>设计理念                &nbsp;|&nbsp;					2014-11-04 </div>
+					</li>
+                    <li>
+						<a href="http://www.boxui.com/ued/design-idea/22119.html" title="如何让头脑风暴更有效率" target="_blank">如何让头脑风暴更有效率</a>
+						<div>设计理念                &nbsp;|&nbsp;                2014-11-04 </div>
+					</li>
+                    <li>
+						<a href="http://www.boxui.com/ued/user-research/22112.html" title="怎样深入做用户分析" target="_blank">怎样深入做用户分析</a>
+						<div>用户研究                &nbsp;|&nbsp;               2014-11-03</div>
+					</li>
+                    <li id="msg_scroll">
+						<ul style="margin-top: 0px;">
+							<li class="text_job">
+                				<a href="http://www.boxui.com/design-dynamics/job/job_others/22143.html" title="江苏上市公司  无锡七酷招聘UI设计师" target="_blank">江苏上市公司  无锡七酷招聘UI设计师</a>
+				            </li>
+							<li class="text_party">
+                				<a href="http://www.boxui.com/say-anythings/19526.html" title="OPPO第二届手机主题设计大赛" target="_blank">OPPO第二届手机主题设计大赛</a>
+				            </li>
+							<li class="text_news">
+								<a href="http://www.boxui.com/design-dynamics/design-news/17954.html" title="What’s up？ WhatsApp之前世今生" target="_blank">What’s up？ WhatsApp之前世今生</a>
+				            </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="post-home clearfix" id="index_tool">
+				<ul><h2 class="title">UI设计师必备工具</h2></ul>
+				<ul class="tool_icon">
+					<!--<h3>设计必备</h3>-->
+					<li><a href="http://www.boxui.com/tools" class="ps" title="无所不能的神器 - Photoshop" target="_blank"></a></li>
+					<li><a href="http://www.boxui.com/tools" class="ai" title="Adobe王牌矢量工具 - Illustrator" target="_blank"></a></li>
+					<li><a href="http://www.boxui.com/tools" class="axure" title="应用最广泛的交互原型工具 - Axure" target="_blank"></a></li>
+					<li><a href="http://www.boxui.com/tools" class="mindmanage" title="思维导图，脑图 - mindManage" target="_blank"></a></li>
+				</ul>
+				
+				<ul class="tool_icon">
+					<h3>设计辅助</h3>
+					<li><a href="http://www.boxui.com/tools" class="cutAndSliceMe" title="切图神器 - Cut And Slice Me" target="_blank"></a></li>
+					<li><a href="http://www.boxui.com/tools" class="markman" title="设计图标注神器，前端再也不用担心我的设计稿了 - Mark man" target="_blank"></a></li>
+					<li><a href="http://www.boxui.com/tools" class="guideguide" title="划参考线神器 - GuideGuid e" target="_blank"></a></li>
+					<li><a href="http://www.boxui.com/tools" class="kuler" title="Adobe官方御用配色插件 - Kuler" target="_blank"></a></li>
+				</ul>
+			</div>
+			<div class="post-home clearfix" id="index_book"><a href="http://www.boxui.com/book" title="UI设计师必读书籍" target="_blank"></a></div>
+			<!-- book -->
+			<div class="post-inner">
+				<div class="blockquote" style=" overflow:hidden;">
+					<div class="float_left" style="word-break:break-all;">
+						童鞋们，该涨涨姿势了！<br>
+						在这里盒子UI精心收集并整理了UI设计师必练的姿势，各位新手设计师就当个参考，老鸟权当复习。<br>
+					</div>
+					<div class="float_right" style="width:250px;">
+						<p style="color:#4ba6e5;">好东西别忘了分享给更多的人哦</p>
+						<div class="bdsharebuttonbox bdshare-button-style0-32" data-bd-bind="1416810453085"><a class="bds_more" href="http://share.baidu.com/code#" data-cmd="more"></a><a title="分享到QQ空间" class="bds_qzone" href="http://share.baidu.com/code#" tangram_guid="TANGRAM_280" data-cmd="qzone"></a><a title="分享到新浪微博" class="bds_tsina" href="http://share.baidu.com/code#" data-cmd="tsina"></a><a title="分享到腾讯微博" class="bds_tqq" href="http://share.baidu.com/code#" data-cmd="tqq"></a><a title="分享到人人网" class="bds_renren" href="http://share.baidu.com/code#" data-cmd="renren"></a><a title="分享到微信" class="bds_weixin" href="http://share.baidu.com/code#" data-cmd="weixin"></a></div>
+						<script type="text/javascript">
+							window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+						</script>
+					</div>
+				</div>
+				
+				<div class="book">
+					<div class="book_sort">
+						<ul style="width: 180px;"><h3>设计入门必读</h3></ul>
+						<ul class="book_single" style="width: 380px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="设计心理学" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/the_design_of_everyday_things.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">设计心理学</div>
+								<div class="author">作者：Donald Norman</div>
+								<div class="description">设计师<strong>入门必读</strong>，没读过这本书你都不好意思说你是设计师！</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B003CIOS1O/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B003CIOS1O&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						 </ul>
+						 
+						 <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="设计中的设计（全本）" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/design-in-design.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">设计中的设计（全本）</div>
+								<div class="author">作者：原研哉</div>
+								<div class="description">设计<strong>启蒙</strong>类书籍中很难得的一本，读完会改变你对设计的想法！</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B0046ZS8XG/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B0046ZS8XG&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="Don't Make Me Think" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/do_not_make_me_think.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">Don't Make Me Think</div>
+								<div class="author">作者：Steve Krug</div>
+								<div class="description">传说中的中文译名：《点石成金：访客至上的网页设计秘笈》就是它了。</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B0011BTJV8/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B0011BTJV8&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="写给大家看的设计书" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/The_Non-Designers_Design_Book.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">写给大家看的设计书</div>
+								<div class="author">作者：Robin Williams</div>
+								<div class="description">最通俗易懂的<strong>平民级</strong>入门必读设计类书籍</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B001MV7CXY/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B001MV7CXY&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="设计师要懂心理学" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/100-things-every-desinger-needs-to-know-about-people.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">设计师要懂心理学</div>
+								<div class="author">作者：Susan Weinschenk</div>
+								<div class="description">腾讯用户研究与体验设计部推荐，畅销欧美、日本，设计师必读经典</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B00COG458G/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B00COG458G&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+					  </div>
+					  
+					  <div class="book_sort">
+						<ul style="width: 180px;"><h3>WEB/APP设计</h3></ul>
+						
+						  <ul class="book_single" style="width: 380px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="众妙之门:网站UI设计之道(修订版)" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/the-smashing-book-ui.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">众妙之门:网站UI设计之道(修订版)</div>
+								<div class="author">作者：Smashing Magazine</div>
+								<div class="description">知名设计网站Smashing Magazine上线以来的精华总结，来自全球的知名设计师无私地分享了多年积累的宝贵经验</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B009YDRPFC/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B009YDRPFC&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="众妙之门:网站UI设计之道(修订版)" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/the-smashing-book-ui-re.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">众妙之门:网站重新设计之道</div>
+								<div class="author">作者：Smashing Magazine</div>
+								<div class="description">Smashing Magazine年度重量级作品，腾讯交互体验设计部团队精心翻译</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B00HECYV66/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B00HECYV66&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="众妙之门:移动交互体验设计" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/the-smashing-book-mobile.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">众妙之门:移动交互体验设计</div>
+								<div class="author">作者：Smashing Magazine</div>
+								<div class="description">汇集全球顶尖设计高手的最新理念与实际经验,做移动设计的童鞋千万别错过</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B00IM56K0E/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B00IM56K0E&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="移动应用UI设计模式" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/Mobile-Design-Pattern-Gallery-UI-Patterns-for-Mobile-Applications.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">移动应用UI设计模式</div>
+								<div class="author">作者：Theresa Neil</div>
+								<div class="description">一本能激发设计灵感的超级设计手册,没错，说它是一本手册一点也不为过</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B00AMAI1AO/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B00AMAI1AO&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+						  
+						  <ul class="book_single" style="width: 180px;">
+							<li class="book_img">
+								<img width="180" height="240" alt="贴心设计·打造高可用性的移动产品" src="http://www.boxui.com/blog/wp-content/themes/boxui_waterfall/images/Mobile-Usability.jpg">
+							</li>
+							<li class="book_info">
+								<div class="title">贴心设计·打造高可用性的移动产品</div>
+								<div class="author">作者Jakob Nielsen</div>
+								<div class="description">可用性测试鼻祖最新力作，值得一看</div>
+								<a class="btn_orange" title="喜欢就把她收了吧，骚年！" target="_blank" href="http://www.amazon.cn/gp/product/B00DQ3HLKK/ref=as_li_tf_tl?ie=UTF8&amp;camp=536&amp;creative=3200&amp;creativeASIN=B00DQ3HLKK&amp;linkCode=as2&amp;tag=boxui-23">喜欢就收了她吧...</a>
+							</li>
+						  </ul>
+					  </div>
+					  
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer">
+		<div class="main">
+			<ul class="title_img">
+				 <h3>盒子UI</h3>
+				<li><a href="http://www.boxui.com/" title="UI设计-返回盒子UI首页">首页</a></li>
+				<li><a href="http://www.boxui.com/?page_id=2" title="关于盒子UI">关于盒子UI</a></li>
+				<li><a href="http://www.boxui.com/?page_id=429" title="友情链接">友情链接</a></li>
+			</ul>
+			<ul class="title_img">
+				<h3>分享设计</h3>
+				<li><a title="酷站欣赏" href="http://www.boxui.com/category/website">酷站欣赏</a></li>
+				<li><a title="UI设计_优秀用户界面设计" href="http://www.boxui.com/category/ued/ui-design-ued">UI设计</a></li>
+				<li><a title="交互设计" href="http://www.boxui.com/category/ued/interaction-design">交互设计</a></li>
+				<li><a title="用户研究" href="http://www.boxui.com/category/ued/user-research">用户研究</a></li>
+				<li><a title="UI设计理念" href="http://www.boxui.com/category/ued/design-idea">设计理念</a></li>
+			</ul>
+			<ul class="title_img">
+				<h3>设计资源</h3>
+				<li><a title="UI设计必备工具" href="http://www.boxui.com/tools">UI设计必备工具</a></li>
+				<li><a title="UI设计师必读书籍" href="http://www.boxui.com/book">UI设计师必读书籍</a></li>
+			</ul>
+				<ul>
+			官方QQ群（技术交流、招聘求职）：<a href="http://wp.qq.com/wpa/qunwpa?idkey=7d5c509636163a831b592498cb472d5dbfb59c7dc54da17baafd92fa1510f2e2" target="_blank">2603064</a>
+			<li>亲，关注一下又不会怀孕</li>
+			<li><wb:follow-button uid="2704184297" type="red_1" width="67" height="40"><iframe src="http://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=1&amp;uid=2704184297&amp;width=67&amp;height=40&amp;language=zh_cn" width="67" height="40" frameborder="0" scrolling="no" marginheight="0"></iframe></wb:follow-button></li>
+			<li></li>
+			<li>Copyright © 2009-2013 <a href="http://www.boxui.com/" title="盒子UI">盒子UI</a> All rights reserved    
+		  </li></ul>
+		</div>
+	</div>
+	<!-- 回到顶部 -->
+	<a class="return-top wbtn" id="elevator" href="#wrap">▲<br>顶部</a>
+	<script type="text/javascript" src="/js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/gallery/unslider.min.js"></script>
+	<script type="text/javascript" src="/js/app/boxui.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop()!=0){
+			$('#elevator').fadeIn();
+		}
+		else{
+			$('#elevator').fadeOut();} });
+			$('#elevator').click(function(){  //back to top
+			$('body,html').animate({scrollTop:0},200);});
+		});
+	</script>
+	
+	</body>
+</html>
